@@ -1,4 +1,123 @@
-//Fonts
-//A
-//H1-h6
-//buttons
+// fonts
+html {
+	font-size: $base-font-size;
+}
+
+body {
+	color: $body-font-color;
+	font: $body-font-weight $body-font-size/$body-line-height $body-font;
+}
+
+
+// links 
+a{
+	color: $link-color;
+	text-decoration: $link-text-decoration;
+}
+
+a[href^="tel:"] {
+	color: inherit;
+}
+
+a:focus, a:hover {
+    color: $link-hover-color;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $h-font;
+	font-weight: $h-font-weight;
+	text-transform: $h-text-transform;
+}
+
+h1, h2, h3, h4 {
+	margin: 1.25rem 0;
+}
+
+h1 {
+	color: $h1-font-color;
+	font-family: $h1-font;
+	font-size: $h1-font-size;
+	font-weight: $h1-font-weight;
+	text-transform: $h1-text-transform;
+}
+
+h2 {
+	color: $h2-font-color;
+	font-family: $h2-font;
+	font-size: $h2-font-size;
+	font-weight: $h2-font-weight;
+	text-transform: $h2-text-transform;
+}
+
+h3 {
+	color: $h3-font-color;
+	font-family: $h3-font;
+	font-size: $h3-font-size;
+	font-weight: $h3-font-weight;
+	text-transform: $h3-text-transform;
+}
+
+h4 {
+	color: $h4-font-color;
+	font-family: $h4-font;
+	font-size: $h4-font-size;
+	font-weight: $h4-font-weight;
+	text-transform: $h4-text-transform;
+}
+
+h5 {
+	color: $h5-font-color;
+	font-family: $h5-font;
+	font-size: $h5-font-size;
+	font-weight: $h5-font-weight;
+	text-transform: $h5-text-transform;
+}
+
+h6 {
+	color: $h6-font-color;
+	font-family: $h6-font;
+	font-size: $h6-font-size;
+	font-weight: $h6-font-weight;
+	text-transform: $h6-text-transform;
+}
+
+
+
+// buttons
+#{$button-selector} {
+    background-color: $button-background-color;
+    border: $button-border;
+    border-radius: $button-border-radius;
+    color: $button-color;
+    display: inline-block;
+    font-family: $button-font;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    margin: 0;
+    outline: none;
+    padding: $button-padding;
+    text-transform: $button-text-transform;
+    transition: $button-transition;
+    vertical-align: middle;   
+}
+
+#{$button-selector} {
+	&:hover {
+		background-color: $button-hover-background-color;
+		color: $button-hover-color;
+	}
+}
+
+// bold class
+.bold{
+	font-weight: 700;
+}
+
+// italic class
+.italic{
+	font-style: italic;
+}

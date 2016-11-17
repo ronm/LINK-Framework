@@ -1,2 +1,125 @@
 // if using SASS, we could setup defaults on a per site basis
 // Colors: this is iffy. Could define default colors per site as variables to be reused throughout.
+
+// container 
+$container-width: 75rem;
+
+
+// Fonts
+$base-font-size: 16px;
+$body-font-size: rem-calc($base-font-size);
+$body-line-height: 1.5;
+$body-font: 'PT Serif', serif;
+$body-font-color: #333;
+$body-font-weight: 400;
+
+// links 
+$link-color: #e31937;
+$link-hover-color: #762124;
+$link-text-decoration: none;
+
+// h1-h6 
+$h-font: $body-font;
+$h-font-color: $body-font-color;
+$h-font-weight: 700;
+$h-text-transform: uppercase;
+
+$h1-font: $h-font;
+$h1-font-color: $h-font-color;
+$h1-font-size: 2.25rem;
+$h1-font-weight: $h-font-weight;
+$h1-text-transform: $h-text-transform;
+ 
+$h2-font: $h-font;
+$h2-font-color: $h-font-color;
+$h2-font-size: 1.75rem;
+$h2-font-weight: $h-font-weight;
+$h2-text-transform: $h-text-transform;
+
+$h3-font: $h-font;
+$h3-font-color: $h-font-color;
+$h3-font-size: 1.5rem;
+$h3-font-weight: $h-font-weight;
+$h3-text-transform: $h-text-transform;
+
+$h4-font: $h-font;
+$h4-font-color: $h-font-color;
+$h4-font-size: 1.25rem;
+$h4-font-weight: $h-font-weight;
+$h4-text-transform: $h-text-transform;
+
+$h5-font: $h-font;
+$h5-font-color: $h-font-color;
+$h5-font-size: 1.125rem;
+$h5-font-weight: $h-font-weight;
+$h5-text-transform: $h-text-transform;
+
+$h6-font: $h-font;
+$h6-font-color: $h-font-color;
+$h6-font-size: 1rem;
+$h6-font-weight: $h-font-weight;
+$h6-text-transform: $h-text-transform;
+
+// buttons
+$button-selector: '.button, button, input[type="submit"]';
+$button-background-color: #e31937;
+$button-hover-background-color: #e31937;
+$button-border: none;
+$button-border-radius: 0.25rem;
+$button-color: white;
+$button-hover-color: white;
+$button-font: $body-font;
+$button-font-size: 1rem;
+$button-font-weight: 700;
+$button-padding: .85em 1em;
+$button-text-transform: uppercase;
+$button-transition: background-color .25s ease-out,color .25s ease-out;
+
+
+
+
+
+
+
+
+
+
+// FUNCTIONS
+
+@function lower-bound($range) {
+	@if length($range) <= 0 {
+    	@return 0;
+  	}
+  	@return nth($range, 1);
+}
+
+@function upper-bound($range) {
+	@if length($range) < 2 {
+    	@return 999999999999;
+  	}
+  	@return nth($range, 2);
+}
+
+// STRIP UNIT
+// It strips the unit of measure and returns it
+@function strip-unit($num) {
+	@return $num / ($num * 0 + 1);
+}
+
+@function convert-to-rem($value, $base-value: $rem-base) {
+	$value: strip-unit($value) / strip-unit($base-value) * 1rem;
+	@if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+	@return $value;
+}
+
+@function rem-calc($values, $base-value: $rem-base) {
+	$max: length($values);
+
+	@if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+
+	$remValues: ();
+	@for $i from 1 through $max {
+    	$remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  	}
+  	@return $remValues;
+}

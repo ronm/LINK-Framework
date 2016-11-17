@@ -1,4 +1,29 @@
-//* {box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
+
 //A container class to serve as a max-width margin:auto replacement for .row
+.container {
+	margin: auto;
+	max-width: $container-width;
+}
+
 //Responsive table
+.responsive-table {
+	overflow: auto;
+}
+
 //Responsive video
+.responsive-video {
+	height: 0;
+	overflow: hidden;
+	padding-top: 56.25%;
+	position: relative;
+}
+.responsive-video iframe {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
