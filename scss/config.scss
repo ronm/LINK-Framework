@@ -7,7 +7,7 @@ $container-width: 75rem;
 
 // Fonts
 $base-font-size: 16px;
-$body-font-size: rem-calc($base-font-size);
+$body-font-multiplier: 1.5rem;
 $body-line-height: 1.5;
 $body-font: 'PT Serif', serif;
 $body-font-color: #333;
@@ -73,7 +73,7 @@ $button-font-size: 1rem;
 $button-font-weight: 700;
 $button-padding: .85em 1em;
 $button-text-transform: uppercase;
-$button-transition: background-color .25s ease-out,color .25s ease-out;
+$button-transition: background-color .25s ease-out, color .25s ease-out;
 
 
 
@@ -84,42 +84,3 @@ $button-transition: background-color .25s ease-out,color .25s ease-out;
 
 
 
-// FUNCTIONS
-
-@function lower-bound($range) {
-	@if length($range) <= 0 {
-    	@return 0;
-  	}
-  	@return nth($range, 1);
-}
-
-@function upper-bound($range) {
-	@if length($range) < 2 {
-    	@return 999999999999;
-  	}
-  	@return nth($range, 2);
-}
-
-// STRIP UNIT
-// It strips the unit of measure and returns it
-@function strip-unit($num) {
-	@return $num / ($num * 0 + 1);
-}
-
-@function convert-to-rem($value, $base-value: $rem-base) {
-	$value: strip-unit($value) / strip-unit($base-value) * 1rem;
-	@if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
-	@return $value;
-}
-
-@function rem-calc($values, $base-value: $rem-base) {
-	$max: length($values);
-
-	@if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
-
-	$remValues: ();
-	@for $i from 1 through $max {
-    	$remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
-  	}
-  	@return $remValues;
-}

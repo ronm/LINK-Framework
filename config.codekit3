@@ -25,6 +25,22 @@
 		"oAP": "\/css\/framework.css.map",
 		"oF": 0
 		},
+	"\/css\/framework.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/framework.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/framework.min.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/framework.min.css.map",
+		"oF": 0
+		},
 	"\/js\/framework-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -95,7 +111,20 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/framework.css",
+		"oAP": "\/css\/framework.min.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/functions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/functions.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -227,15 +256,15 @@
 		"oS": 0
 		},
 	"\/vendors\/Muscles\/css\/sass\/muscles.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
-		"oAP": "\/vendors\/Muscles\/css\/muscles.min.css",
-		"oF": 3,
+		"oA": 1,
+		"oAP": "\/vendors\/Muscles\/css\/css\/muscles.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
