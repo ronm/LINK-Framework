@@ -9,96 +9,6 @@
 	],
 "creatorBuild": "25444",
 "files": {
-	"\/.sass-cache\/429d4998ee346eb6090f67fb096618b90e34c5fa\/slick-theme.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/429d4998ee346eb6090f67fb096618b90e34c5fa\/slick-theme.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/429d4998ee346eb6090f67fb096618b90e34c5fa\/slick.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/429d4998ee346eb6090f67fb096618b90e34c5fa\/slick.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/_helper.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/_helper.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/_structure.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/_structure.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/_typography.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/_typography.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/config.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/config.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/framework.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/framework.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/helper.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/helper.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/structure.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/structure.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/typography.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/996e3c3d9d0e017f1b4c5d848279a61e70e7cb02\/typography.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_base.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_base.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_functions.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_functions.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_notes.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_notes.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_settings.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/.sass-cache\/bbc42a4bb7f65ec4e572465873b2920f93e0b242\/_settings.scssc",
-		"oF": 0
-		},
-	"\/.sass-cache\/ddf5060f03bde66a54769713b4e34d09445f3663\/muscles.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/ddf5060f03bde66a54769713b4e34d09445f3663\/muscles.scssc",
-		"oF": 0
-		},
 	"\/css\/framework.css": {
 		"aP": 0,
 		"bl": 0,
@@ -317,15 +227,15 @@
 		"oS": 0
 		},
 	"\/vendors\/Muscles\/css\/sass\/muscles.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendors\/Muscles\/css\/css\/muscles.css",
-		"oF": 0,
+		"oA": 0,
+		"oAP": "\/vendors\/Muscles\/css\/muscles.min.css",
+		"oF": 3,
 		"oS": 3,
 		"uL": 1
 		},
@@ -718,7 +628,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 501104095,
-	"displayValue": "LINK Framework",
+	"displayValue": "LINK-Framework",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-archer"
 	},
