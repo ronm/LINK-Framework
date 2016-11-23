@@ -11,7 +11,7 @@
 @import "../vendors/slick/slick/slick.scss", "../vendors/slick/slick/slick-theme.scss";
 
 // Muscles Grid
-@import "../vendors/muscles/css/sass/muscles";
+@import "../vendors/Muscles/css/muscles.css";
 
 // Helpers
 @import "helper";
@@ -31,3 +31,7 @@
 
 // Site ( Are we running the site code through SCSS? )
 // @import "app";
+
+
+// print css
+@import "print";

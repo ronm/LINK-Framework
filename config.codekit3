@@ -111,9 +111,9 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/framework.min.css",
+		"oAP": "\/css\/framework.css",
 		"oF": 2,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/scss\/functions.scss": {
@@ -139,6 +139,19 @@
 		"oA": 1,
 		"oAP": "\/css\/helper.css",
 		"oF": 1,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/print.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/print.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -262,10 +275,10 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendors\/Muscles\/css\/css\/muscles.css",
-		"oF": 0,
-		"oS": 3,
+		"oA": 0,
+		"oAP": "\/vendors\/Muscles\/css\/muscles.css",
+		"oF": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"\/vendors\/Muscles\/css\/sass\/muscles\/_base.scss": {

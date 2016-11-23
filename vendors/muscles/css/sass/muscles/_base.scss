@@ -223,7 +223,7 @@
 //$mediaqueries: reverse($mediaqueries);
 @each $size, $bp in $mediaqueries {
 	//@media (min-width:nth($bp, 1)) {
-	@media (min-width: map-get($bp, "min") ) {
+	@media (max-width: map-get($bp, "max") ) and (min-width: map-get($bp, "min") ) {
 		@include base($size);
     }
 }

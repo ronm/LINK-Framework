@@ -1,6 +1,7 @@
 // fonts
 html {
 	font-size: $base-font-size;
+	text-rendering: optimizeLegibility;
 }
 
 body {	

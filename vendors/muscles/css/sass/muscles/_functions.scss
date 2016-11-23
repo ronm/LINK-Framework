@@ -13,12 +13,9 @@
 	align-items:$val;
 }
 
-@mixin flex-display($val: flex) {
-	@if $val == "flex" {
-		display: flex;
-	} @else {
-		display: flex-inline;
-	}
+@mixin flex-display($val: null) {
+	$val: if($val!=null, #{$val}-, '');
+	display: #{$val}flex;
 }	
 
 @mixin flex-direction($val: row) {

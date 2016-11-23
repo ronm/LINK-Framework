@@ -27,12 +27,13 @@ $gutter: .5rem;
 // (small, medium, large, etc.) class names
 
 $mediaqueries: (
-    //small: ( min : 0rem, max: 40rem ),
-    medium: ( min: 40.063rem, max: 64rem ),
-    large: ( min: 64.063rem, max: 99999999rem )
-    //large: ( min: 64.063rem, max: 90rem )
-    //xlarge: ( min: 90.063rem, max: 120rem )
     //xxlarge: ( min: 120.063rem, max: 99999999rem )
+    //xlarge: ( min: 90.063rem, max: 120rem )
+    //large: ( min: 64.063rem, max: 90rem )    
+    large: ( min: 64.063rem, max: 99999999rem ),
+    medium: ( min: 40.063rem, max: 64rem ),
+    //small: ( min : 0rem, max: 40rem ),    
+    
 );
 
 
