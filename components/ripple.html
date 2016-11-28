@@ -1,0 +1,77 @@
+<template>
+	<style type="text/css">	
+		:host {
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: -1;
+		}
+		
+		:host[data-dark="true"] {
+			background: red;
+		}
+		
+		*::-moz-selection { background: transparent; }
+		*::selection { background: transparent; }
+
+		.ripple {
+			left: 0;	
+			position: absolute;
+			top: 0;
+			background: rgba(255,255,255,.1);
+			border-radius: 50%;
+			width: 3rem;
+			height: 3rem;
+			transition: all .3s ease;
+			transform: scale(0) translate(-50%,-50%);
+			-webkit-transform-origin: 0% 0%;
+					transform-origin: 0% 0%;
+		}
+		
+		.ripple.dark {
+			background: rgba(130,130,130,.1);
+		}
+	</style>
+</template>
+<script>
+(function() {	
+	let element = Object.create(HTMLElement.prototype),
+		thisDoc = (document._currentScript || document.currentScript).ownerDocument;
+		template = thisDoc.querySelector("template"),
+		cleanUp = function() { this.parentNode.removeChild(this); },
+		ripple = function(e) {
+			let parent = this.parentNode,
+				left = e.clientX - parent.offsetLeft,
+				top = e.clientY - parent.offsetTop,
+				larger = Math.max( parent.clientWidth, parent.clientHeight ),
+				r = document.createElement('span');
+
+			if ( getComputedStyle(parent).position === "static" ) { 
+				parent.style.position = "relative";
+				parent.style.zIndex = 0;
+			}
+
+			r.className = 'ripple' + (this.hasAttribute("dark") ? " dark" : "");
+
+			this.shadowRoot.appendChild(r);
+			
+			r.style.left = left + "px";
+			r.style.top = top + "px";
+			
+			r.addEventListener("transitionend", cleanUp.bind(r));
+			window.requestAnimationFrame(() => r.style.transform = "scale(1) translate(-50%,-50%)");
+		};
+
+	element.createdCallback = function() {
+		let shadow = this.attachShadow({ mode: 'open' });
+
+		shadow.appendChild(document.importNode(template.content, true));
+
+		this.parentNode.addEventListener("mousedown", e => ripple.call(this, e));
+	};	
+
+	document.registerElement('touch-ripple', { prototype: element });
+})();
+</script>

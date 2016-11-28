@@ -268,6 +268,54 @@
   float: right;
 }
 
+.close-x {
+  cursor: pointer;
+  display: inline-block;
+  height: 1rem;
+  position: relative;
+  width: 1rem;
+}
+
+.close-x:before,
+.close-x:after {
+  background: #000;
+  content: "";
+  height: 140%;
+  margin-left: 50%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  width: 1px;
+}
+
+.close-x:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.collapsible {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.collapsible li > .title {
+  cursor: pointer;
+}
+
+.collapsible li .content {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.collapsible li:not(.active) .content {
+  height: 0;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -3,7 +3,10 @@
 /*** by Ron Marcelle ******/
 /*** Licensed under MIT ***/
 /**************************/
-(function() {
+
+/*jshint esnext: true */
+
+(function(window, Framework) {
   
   /* FORM: SELECTS */
   class StyleSelect {
@@ -124,39 +127,30 @@
     }
 
     watch() {
-      if ( "MutationObserver" in window && !this.watching ) {
-        var observer = new MutationObserver(function(mutations){
-          mutations.filter(function(m) {try { return m.addedNodes[0].nodeType === 1; } catch(e) { return false; } })
-           .map(function(m) { return m.addedNodes[0]; })
-           .forEach(function(n) { 
-              if (!n.styleProcessed) {
-                var tagName = n.tagName && n.tagName.toLowerCase();
-                if ( tagName === "input" && ["checkbox","radio"].indexOf(n.type) > -1 ) {
-                  new StyleInput(n);
-                } else if ( tagName === "select" ) {
-                  new StyleSelect(n);
-                }
-              }
-          });
-        });
-
-        observer.observe(document.documentElement, { childList: true, subtree: true });      
-
-        this.watching = true;
-      }
+    	if ( "MutationObserver" in window && !this.watching ) {
+	    	var s = [],
+        		observer = new MutationObserver(function(mutations){
+					mutations.filter(function(m) {try { return m.addedNodes[0].nodeType === 1; } catch(e) { return false; } })
+						.map(function(m) { return m.addedNodes[0]; })
+						.forEach(function(n) { 
+							if (!n.styleProcessed) {
+								var tagName = n.tagName && n.tagName.toLowerCase(), s;
+								if ( tagName === "input" && ["checkbox","radio"].indexOf(n.type) > -1 ) {
+									s.push(new StyleInput(n));
+								} else if ( tagName === "select" ) {
+									s.push(new StyleSelect(n));
+								}
+							}
+						});
+					return s;
+				});
+			observer.observe(document.documentElement, { childList: true, subtree: true });      
+			this.watching = true;
+      	}
     }
   }
-
   
-  if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
-    define(() => StyleForm);
-  } else if (typeof module !== 'undefined' && module.exports) {
-	  module.exports = StyleForm.attach;
-  	module.exports.StyleForm = StyleForm;
-	} else {
-	  window.StyleForm = StyleForm;
-	}
+  if ( !Framework ) { Framework = window.Framework = {}; }
+  window.Framework.StyleForm = StyleForm;
   
-  
-  
-})();
+})(window, window.Framework);
