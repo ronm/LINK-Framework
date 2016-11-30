@@ -95,6 +95,12 @@
 		"sC": 1,
 		"tS": 1
 		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -147,9 +153,9 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/framework.css",
+		"oAP": "\/css\/framework.min.css",
 		"oF": 2,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/scss\/functions.scss": {
@@ -235,15 +241,15 @@
 		"sC": 1,
 		"tS": 1
 		},
-	"\/vendors\/FormStyle\/formtyle.scss": {
+	"\/vendors\/FormStyle\/formstyle.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
-		"oAP": "\/vendors\/css\/formtyle.css",
+		"oA": 1,
+		"oAP": "\/vendors\/css\/formstyle.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
