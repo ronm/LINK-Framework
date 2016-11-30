@@ -133,6 +133,10 @@
 			opacity: 1;
 		}
 
+		.select-wrapper.open .options-wrapper .item:not(.active):first-child {
+			display: none;
+		}
+
 		.options-wrapper .item:not(.active):hover {
 			background: #f4f4f4;;
 		}
@@ -281,19 +285,19 @@
 			background-color: transparent;
 			border: 2px solid #121f27;
 			border-radius: inherit;
+			bottom: 0;
 			content:"";
-			height: 32px;
-			left: -5px;
+			left: 0;
 			opacity: 1;
 			position: absolute;
-			top: -5px;
-			-webkit-transform: scale(.7);
+			right: 0;
+			top: 0;
+			/*-webkit-transform: scale(.7);
 					transform: scale(.7);
 			-webkit-transform-origin: 50% 50%;
-					transform-origin: 50% 50%;
+					transform-origin: 50% 50%;*/
 			-webkit-transition: all .6s ease;
 					transition: all .6s ease;
-			width: 32px;
 		}
 
 		.form-item-takeover[data-type="radio"] input:checked + .takeover:before {
@@ -452,36 +456,6 @@
 		} 
   	}
 	/* FORM: SELECTS */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
