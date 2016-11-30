@@ -9,6 +9,18 @@
 	],
 "creatorBuild": "25444",
 "files": {
+	"\/components\/formstyle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/components\/formstyle.html",
+		"oF": 0
+		},
+	"\/components\/ripple.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/components\/ripple.html",
+		"oF": 0
+		},
 	"\/css\/framework.css": {
 		"aP": 0,
 		"bl": 0,
@@ -41,29 +53,44 @@
 		"oAP": "\/css\/framework.min.css.map",
 		"oF": 0
 		},
-	"\/js\/framework-min.js": {
+	"\/framework.production.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/framework-min-min.js",
+		"oAP": "\/framework.production-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 1
 		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
 	"\/js\/framework.js": {
 		"ft": 64,
-		"mi": 0,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/framework-min.js",
-		"oF": 3,
+		"oAP": "\/js\/framework.min.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 1
 		},
 	"\/js\/framework.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/js\/framework.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/js\/framework.production.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/framework.production-min.js",
 		"oF": 1,
 		"sC": 1,
 		"tS": 1
@@ -190,34 +217,43 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/test.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/test.html",
-		"oF": 0
-		},
-	"\/vendors\/FormStyle\/FormStyle.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/vendors\/FormStyle\/FormStyle-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/vendors\/FormStyle\/FormStyle.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/FormStyle\/FormStyle.html",
-		"oF": 0
-		},
-	"\/vendors\/FormStyle\/FormStyle.js": {
+	"\/vendors\/FormStyle\/formstyle.full.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/vendors\/FormStyle\/FormStyle-min.js",
+		"oA": 0,
+		"oAP": "\/vendors\/FormStyle\/formstyle.js",
+		"oF": 3,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/vendors\/FormStyle\/formstyle.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/vendors\/FormStyle\/formstyle-min.js",
 		"oF": 0,
+		"sC": 1,
+		"tS": 1
+		},
+	"\/vendors\/FormStyle\/formtyle.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/vendors\/css\/formtyle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/vendors\/Http\/http.full.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/vendors\/Http\/http.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 1
 		},
@@ -225,80 +261,80 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendors\/Http\/http.min.js",
-		"oF": 2,
+		"oAP": "\/vendors\/Http\/http-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 1
 		},
-	"\/vendors\/muscles\/.gitignore": {
+	"\/vendors\/Muscles\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/.gitignore",
+		"oAP": "\/vendors\/Muscles\/.gitignore",
 		"oF": 0
 		},
-	"\/vendors\/muscles\/css\/muscles.css": {
+	"\/vendors\/Muscles\/css\/muscles.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/css\/muscles-min.css",
+		"oAP": "\/vendors\/Muscles\/css\/muscles-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/vendors\/muscles\/css\/muscles.css.map": {
+	"\/vendors\/Muscles\/css\/muscles.css.map": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/css\/muscles.css.map",
+		"oAP": "\/vendors\/Muscles\/css\/muscles.css.map",
 		"oF": 0
 		},
-	"\/vendors\/muscles\/css\/muscles.min.css": {
+	"\/vendors\/Muscles\/css\/muscles.min.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/css\/muscles.min-min.css",
+		"oAP": "\/vendors\/Muscles\/css\/muscles.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/vendors\/muscles\/css\/muscles.min.css.map": {
+	"\/vendors\/Muscles\/css\/muscles.min.css.map": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/css\/muscles.min.css.map",
+		"oAP": "\/vendors\/Muscles\/css\/muscles.min.css.map",
 		"oF": 0
 		},
-	"\/vendors\/muscles\/css\/muscles.prefix.css": {
+	"\/vendors\/Muscles\/css\/muscles.prefix.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/css\/muscles.prefix-min.css",
+		"oAP": "\/vendors\/Muscles\/css\/muscles.prefix-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/vendors\/muscles\/css\/muscles.prefix.min.css": {
+	"\/vendors\/Muscles\/css\/muscles.prefix.min.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/css\/muscles.prefix.min-min.css",
+		"oAP": "\/vendors\/Muscles\/css\/muscles.prefix.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/vendors\/muscles\/css\/normalize.css": {
+	"\/vendors\/Muscles\/css\/normalize.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/vendors\/muscles\/css\/normalize-min.css",
+		"oAP": "\/vendors\/Muscles\/css\/normalize-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/vendors\/muscles\/css\/sass\/muscles.scss": {
+	"\/vendors\/Muscles\/css\/sass\/muscles.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -306,12 +342,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/vendors\/muscles\/css\/css\/muscles.css",
-		"oF": 0,
-		"oS": 3,
+		"oAP": "\/vendors\/Muscles\/css\/muscles.css",
+		"oF": 3,
+		"oS": 1,
 		"uL": 1
 		},
-	"\/vendors\/muscles\/css\/sass\/muscles\/_base.scss": {
+	"\/vendors\/Muscles\/css\/sass\/muscles\/_base.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -319,12 +355,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/vendors\/muscles\/css\/sass\/css\/_base.css",
+		"oAP": "\/vendors\/Muscles\/css\/sass\/css\/_base.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"\/vendors\/muscles\/css\/sass\/muscles\/_functions.scss": {
+	"\/vendors\/Muscles\/css\/sass\/muscles\/_functions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -332,12 +368,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/vendors\/muscles\/css\/sass\/css\/_functions.css",
+		"oAP": "\/vendors\/Muscles\/css\/sass\/css\/_functions.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"\/vendors\/muscles\/css\/sass\/muscles\/_notes.scss": {
+	"\/vendors\/Muscles\/css\/sass\/muscles\/_notes.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -345,12 +381,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/vendors\/muscles\/css\/sass\/css\/_notes.css",
+		"oAP": "\/vendors\/Muscles\/css\/sass\/css\/_notes.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"\/vendors\/muscles\/css\/sass\/muscles\/_settings.scss": {
+	"\/vendors\/Muscles\/css\/sass\/muscles\/_settings.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -358,12 +394,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/vendors\/muscles\/css\/sass\/css\/_settings.css",
+		"oAP": "\/vendors\/Muscles\/css\/sass\/css\/_settings.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"\/vendors\/muscles\/readme.md": {
+	"\/vendors\/Muscles\/readme.md": {
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
@@ -372,7 +408,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/vendors\/muscles\/readme.html",
+		"oAP": "\/vendors\/Muscles\/readme.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -381,247 +417,27 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/vendors\/slick\/.gitignore": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/.gitignore",
-		"oF": 0
-		},
-	"\/vendors\/slick\/bower.json": {
-		"ft": 524288,
+	"\/vendors\/slick": {
+		"ft": 65536,
 		"oA": 1,
-		"oAP": "\/vendors\/slick\/bower-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/vendors\/slick\/component.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/vendors\/slick\/component-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/vendors\/slick\/CONTRIBUTING.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/CONTRIBUTING.markdown",
+		"oAP": "\/build\/vendors\/slick",
 		"oF": 0
 		},
-	"\/vendors\/slick\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/index.html",
-		"oF": 0
-		},
-	"\/vendors\/slick\/ISSUE_TEMPLATE.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/vendors\/slick\/ISSUE_TEMPLATE.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/vendors\/slick\/LICENSE": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/LICENSE",
-		"oF": 0
-		},
-	"\/vendors\/slick\/Makefile": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/Makefile",
-		"oF": 0
-		},
-	"\/vendors\/slick\/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/vendors\/slick\/package-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/vendors\/slick\/README.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/README.markdown",
-		"oF": 0
-		},
-	"\/vendors\/slick\/slick.jquery.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/vendors\/slick\/slick.jquery-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/vendors\/slick\/slick\/ajax-loader.gif": {
-		"ft": 4194304,
-		"iS": 4178,
-		"oA": 0,
-		"oAP": "\/vendors\/slick\/slick\/ajax-loader.gif",
-		"oF": 0,
-		"opt": 1
-		},
-	"\/vendors\/slick\/slick\/config.rb": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/slick\/config.rb",
-		"oF": 0
-		},
-	"\/vendors\/slick\/slick\/fonts\/slick.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/slick\/fonts\/slick.eot",
-		"oF": 0
-		},
-	"\/vendors\/slick\/slick\/fonts\/slick.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/slick\/fonts\/slick.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/vendors\/slick\/slick\/fonts\/slick.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/slick\/fonts\/slick.ttf",
-		"oF": 0
-		},
-	"\/vendors\/slick\/slick\/fonts\/slick.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/slick\/fonts\/slick.woff",
-		"oF": 0
-		},
-	"\/vendors\/slick\/slick\/slick-theme.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/slick\/slick-theme-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/vendors\/slick\/slick\/slick-theme.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/vendors\/slick\/slick\/slick-theme.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendors\/slick\/slick\/slick-theme.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendors\/slick\/css\/slick-theme.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/vendors\/slick\/slick\/slick.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/vendors\/slick\/slick\/slick-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/vendors\/slick\/slick\/slick.js": {
+	"\/vendors\/SmoothScroll\/smoothscroll.full.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendors\/slick\/slick\/slick-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 1
-		},
-	"\/vendors\/slick\/slick\/slick.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/vendors\/slick\/slick\/slick.css",
-		"oF": 0,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
-	"\/vendors\/slick\/slick\/slick.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/vendors\/slick\/slick\/slick.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 1
-		},
-	"\/vendors\/slick\/slick\/slick.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/vendors\/slick\/css\/slick.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/vendors\/SmoothScroll\/SmoothScroll.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/vendors\/SmoothScroll\/SmoothScroll.min.js",
+		"oAP": "\/vendors\/SmoothScroll\/smoothscroll.js",
 		"oF": 3,
 		"sC": 1,
 		"tS": 1
 		},
-	"\/vendors\/SmoothScroll\/SmoothScroll.min.js": {
+	"\/vendors\/SmoothScroll\/smoothscroll.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/vendors\/SmoothScroll\/SmoothScroll.min-min.js",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/vendors\/SmoothScroll\/smoothscroll-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 1
 		},
@@ -643,12 +459,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/vendors\/Waybetter\/waybetter-min.js": {
+	"\/vendors\/Waybetter\/waybetter.full.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendors\/Waybetter\/waybetter-min-min.js",
-		"oF": 0,
+		"oAP": "\/vendors\/Waybetter\/waybetter.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 1
 		},
@@ -658,20 +474,11 @@
 		"oAP": "\/vendors\/Waybetter\/waybetter.html",
 		"oF": 0
 		},
-	"\/vendors\/Waybetter\/Waybetter.js": {
+	"\/vendors\/Waybetter\/waybetter.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/vendors\/Waybetter\/Waybetter.min.js",
-		"oF": 3,
-		"sC": 1,
-		"tS": 1
-		},
-	"\/vendors\/Waybetter\/waybetter.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/vendors\/Waybetter\/waybetter.min-min.js",
+		"oAP": "\/vendors\/Waybetter\/waybetter-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 1
@@ -680,12 +487,12 @@
 "hooks": [
 	{
 		"enabled": 1,
-		"name": "Hook #1",
-		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGgoNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QHwcIDxUdJygrMjY7PD9DR0xNUFZaXmNobG9wc3R6fX9VJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAe0hALERRaTlMub2JqZWN0c6ISE4ADgBSAHdQLFhcYGRobHF8QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUeHyAhCyIjJCUmWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIgCykqEAGAB9IsLS4vWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy4wMVxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAszNaE0gAmADNMLIDc4OTpZTlNLZXlQYXRogAsQCoAKXWlucHV0RnVsbFBhdGjSLC09Pl8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPTAx0iwtQEFeTlNNdXRhYmxlQXJyYXmjQEIxV05TQXJyYXnSLC1ERV8QE05TS2V5UGF0aEV4cHJlc3Npb26kREYwMV8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00ggC0lKS18QD05TQ29uc3RhbnRWYWx1ZYAPEACAEF5MSU5LLUZyYW1ld29ya9IsLU5PXxAZTlNDb25zdGFudFZhbHVlRXhwcmVzc2lvbqNOMDHUC1FSU1RKJFVaTlNNb2RpZmllcldOU0ZsYWdzXk5TT3BlcmF0b3JUeXBlgBIQY9IsLVdYXxAVTlNJblByZWRpY2F0ZU9wZXJhdG9yo1dZMV8QE05TUHJlZGljYXRlT3BlcmF0b3LSLC1bXF8QFU5TQ29tcGFyaXNvblByZWRpY2F0ZaNbXTFbTlNQcmVkaWNhdGXUCxYXGBlgYWKAE4AZgBWAG9UeHyAhCyIjJGYmgAaABYAWgA3SEAtpNaFqgBeADNMLIDc4OW6AC4AYXWlucHV0RmlsZW5hbWXTSCALcUpLgBqAEF8QEGZyYW1ld29yay1taW4uanPVC1F1dlN3SngkeVhOU05lZ2F0ZVlOU09wdGlvbnOAHAgQBNIsLXt8XxAbTlNFcXVhbGl0eVByZWRpY2F0ZU9wZXJhdG9yo3tZMdIsLUJ+okIx0iwtgIFfEBNOU0NvbXBvdW5kUHJlZGljYXRlo4BdMV8QD05TS2V5ZWRBcmNoaXZlctGEhVRyb290gAEACAARABoAIwAtADIANwBZAF8AZgCAAJIAmQCbAJ0AnwCkAK8AsgC0ALYAuADBANUA6AD+AQABAgEEAQYBEQEbASoBPQFJAUsBTQFPAVEBUwFgAWUBZwFpAW4BeQGCAZUBmQGmAa8BtAG2AbgBugHBAcsBzQHPAdEB3wHkAgMCBwIMAhsCHwInAiwCQgJHAl4CZQJ3AnkCewJ9AowCkQKtArECugLFAs0C3ALeAuAC5QL9AwEDFwMcAzQDOANEA00DTwNRA1MDVQNgA2IDZANmA2gDbQNvA3EDcwN6A3wDfgOMA5MDlQOXA6oDtQO+A8gDygPLA80D0gPwA\/QD+QP8BAEEFwQbBC0EMAQ1AAAAAAAAAgEAAAAAAAAAhgAAAAAAAAAAAAAAAAAABDc=",
+		"name": "Browserify",
+		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGYWJYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicpMDQ5Oj1BRUpLTlRYXF5VJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAGAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCwwogAfSKissLVokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNTZWxmRXhwcmVzc2lvbqMsLi9cTlNFeHByZXNzaW9uWE5TT2JqZWN00hALMTOhMoAJgAzTCx81Njc4WU5TS2V5UGF0aIALEAqACl1pbnB1dEZ1bGxQYXRo0iorOzxfEBxOU0tleVBhdGhTcGVjaWZpZXJFeHByZXNzaW9uozsuL9IqKz4\/Xk5TTXV0YWJsZUFycmF5oz5AL1dOU0FycmF50iorQkNfEBNOU0tleVBhdGhFeHByZXNzaW9upEJELi9fEBROU0Z1bmN0aW9uRXhwcmVzc2lvbtNGHwtHSElfEA9OU0NvbnN0YW50VmFsdWWADxAAgBBeTElOSy1GcmFtZXdvcmvSKitMTV8QGU5TQ29uc3RhbnRWYWx1ZUV4cHJlc3Npb26jTC4v1AtPUFFSSCNTWk5TTW9kaWZpZXJXTlNGbGFnc15OU09wZXJhdG9yVHlwZYASEGPSKitVVl8QFU5TSW5QcmVkaWNhdGVPcGVyYXRvcqNVVy9fEBNOU1ByZWRpY2F0ZU9wZXJhdG9y0iorWVpfEBVOU0NvbXBhcmlzb25QcmVkaWNhdGWjWVsvW05TUHJlZGljYXRl0iorQF2iQC\/SKitfYF8QE05TQ29tcG91bmRQcmVkaWNhdGWjX1svXxAPTlNLZXllZEFyY2hpdmVy0WNkVHJvb3SAAQAIABEAGgAjAC0AMgA3AFAAVgBdAHcAiQCQAJIAlACWAJsApgCoAKoArAC1AMkA3ADyAPQA9gD4APoBBQEPAR4BMQE9AT8BQQFDAUUBRwFUAVkBWwFgAWsBdAGHAYsBmAGhAaYBqAGqAawBswG9Ab8BwQHDAdEB1gH1AfkB\/gINAhECGQIeAjQCOQJQAlcCaQJrAm0CbwJ+AoMCnwKjAqwCtwK\/As4C0ALSAtcC7wLzAwkDDgMmAyoDNgM7Az4DQwNZA10DbwNyA3cAAAAAAAACAQAAAAAAAABlAAAAAAAAAAAAAAAAAAADeQ==",
 		"runOrder": 0,
-		"scriptSourceString": "browserify js\/framework-min.js -o js\/framework.min.js",
+		"scriptSourceString": "\/usr\/local\/Cellar\/node\/0.10.26\/bin\/browserify js\/framework.min.js -o js\/framework.production.js",
 		"scriptType": 1,
-		"uuidString": "3BD6BE89-CB21-4859-91FD-B8F00B8E2A1B"
+		"uuidString": "B4E3D5D4-2EA0-462F-B54F-F38B5CA33469"
 		}
 	],
 "manualImportLinks": {
@@ -2567,7 +2374,7 @@
 		"pluginMask": 3758088159
 		},
 	"languageDefaultsTS": {
-		"autoOutputAction": 1,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "\/js",
 		"autoOutputPathReplace1": "",
@@ -2578,17 +2385,17 @@
 		"jsxMode": 0,
 		"minifyOutput": 0,
 		"moduleResolutionType": 0,
-		"moduleType": 4,
+		"moduleType": 2,
 		"noImplicitAny": 0,
 		"preserveConstEnums": 0,
 		"removeComments": 0,
 		"suppressImplicitAnyIndexErrors": 0,
-		"targetECMAVersion": 1
+		"targetECMAVersion": 0
 		},
 	"languageDefaultsUserDefined": [
 		],
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/vendors\/slick",
 	"sourceFolderName": "source",
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {

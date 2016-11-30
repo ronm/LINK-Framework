@@ -1,5 +1,5 @@
-var SmoothScroll = require("../vendors/SmoothScroll/SmoothScroll.min");
-var Waybetter = require("../vendors/Waybetter/waybetter.min");
+var SmoothScroll = require("../vendors/SmoothScroll/smoothscroll");
+var Waybetter = require("../vendors/Waybetter/waybetter");
 var $http = require("../vendors/Http/http");
 
 /*jshint esnext: true */

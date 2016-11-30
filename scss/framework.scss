@@ -11,7 +11,7 @@
 @import "../vendors/slick/slick/slick.scss", "../vendors/slick/slick/slick-theme.scss";
 
 // Muscles Grid
-@import "../vendors/Muscles/css/muscles.css";
+@import "../vendors/Muscles/css/sass/muscles";
 
 // Helpers
 @import "helper";
@@ -23,7 +23,7 @@
 @import "typography";
 
 // Custom Form Styles
-@import "../vendors/FormStyle/FormStyle.css";
+@import "../vendors/FormStyle/FormStyle";
 
 
 // Drupal ( is this a Drupal site? )
