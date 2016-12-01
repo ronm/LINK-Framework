@@ -75,10 +75,10 @@ var $http = require("../vendors/Http/http");
 		}
 		
 		function _processRetinaImages() {
-			[].slice.apply(document.querySelectorAll(settings.retinaImage)).forEach(img => {
+			Array.from(document.querySelectorAll(settings.retinaImage)).forEach(img => {
 				if ( img.tagName.toLowerCase() === "img" ) { _cutRetinaInHalf(img); } 
 				else {
-					[].slice.apply(img.querySelector("img")).forEeach(img => {
+					Array.from(img.querySelectorAll("img")).forEeach(img => {
 						if ( img.complete ) { _cutRetinaInHalf(img); } else {
 							img.addEventListner("load", () => _cutRetinaInHalf(img));
 						}
@@ -233,7 +233,7 @@ var $http = require("../vendors/Http/http");
 	if (typeof window.drupalSettings !== "undefined" && typeof window.drupalSettings.toolbar !== "undefined") {
     	var tabs = document.querySelector('ul.button-group');
     	tabs.style.margin = 0;
-    	[].slice.apply(tabs.children).forEach(function(li) { li.classList.add("admin-menu-tab"); });
+    	Array.from(tabs.children).forEach(function(li) { li.classList.add("admin-menu-tab"); });
 		document.querySelector('.toolbar-menu-administration').appendChild( tabs );
 	}
 })(window);
