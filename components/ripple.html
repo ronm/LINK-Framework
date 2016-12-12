@@ -1,4 +1,6 @@
+<link rel="import" href="components/styles.html" />
 <template>
+	<link rel="stylesheet" href=""/>
 	<style type="text/css">	
 		:host {
 			bottom: 0;
@@ -22,9 +24,10 @@
 			top: 0;
 			background: rgba(255,255,255,.1);
 			border-radius: 50%;
-			width: 3rem;
-			height: 3rem;
-			transition: all .3s ease;
+			opacity: 1;
+			width: 8rem;
+			height: 8rem;
+			transition: transform .3s ease, opacity .15s linear .15s;
 			transform: scale(0) translate(-50%,-50%);
 			-webkit-transform-origin: 0% 0%;
 					transform-origin: 0% 0%;
@@ -61,7 +64,10 @@
 			r.style.top = top + "px";
 			
 			r.addEventListener("transitionend", cleanUp.bind(r));
-			window.requestAnimationFrame(() => r.style.transform = "scale(1) translate(-50%,-50%)");
+			window.requestAnimationFrame(() => { 
+				r.style.transform = "scale(1) translate(-50%,-50%)";
+				r.style.opacity = 0;
+			});
 		};
 
 	element.createdCallback = function() {
