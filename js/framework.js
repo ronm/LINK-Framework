@@ -14,7 +14,6 @@ var $http = require("../vendors/Http/http");
 	*/
 
 	var htmlClass = document.documentElement.classList,
-		navEnabled = false,
 		defaults = {
 			collapsibleSelector: ".collapsible",
 			externalLinks: true,
@@ -23,7 +22,8 @@ var $http = require("../vendors/Http/http");
 			jumpLinks: true,
 			navOpenClass: "nav-enabled",
 			retinaImage: ".retina-image",
-			scrollClass: "minimal",
+			scrollAttr: "minimal",
+			scrollAttrIgnoreInterior: false,
 			scrollIgnoreMQ: '(min-width:1025px)',
 			scrollOffset: document.querySelector("header"),
 			scrollOnLoad: true,
@@ -49,7 +49,6 @@ var $http = require("../vendors/Http/http");
 			}
 				
 			if ( settings.hamburger ) {
-				navEnabled = false;
 				_watchHamburger();
 			}
 				
@@ -75,12 +74,19 @@ var $http = require("../vendors/Http/http");
 		}
 		
 		function _processRetinaImages() {
-			Array.from(document.querySelectorAll(settings.retinaImage)).forEach(img => {
-				if ( img.tagName.toLowerCase() === "img" ) { _cutRetinaInHalf(img); } 
-				else {
-					Array.from(img.querySelectorAll("img")).forEeach(img => {
-						if ( img.complete ) { _cutRetinaInHalf(img); } else {
-							img.addEventListner("load", () => _cutRetinaInHalf(img));
+			[].slice.apply(document.querySelectorAll(settings.retinaImage)).forEach(img => {
+				if ( img.tagName.toLowerCase() === "img" ) { 
+					if ( img.complete ) { 
+						_cutRetinaInHalf(img); 
+					} else {
+						img.addEventListener("load", () => _cutRetinaInHalf(img));
+					}
+				} else {
+					[].slice.apply(img.querySelectorAll("img")).forEach(img => {
+						if ( img.complete ) { 
+							_cutRetinaInHalf(img); 
+						} else {
+							img.addEventListener("load", () => _cutRetinaInHalf(img));
 						}
 					});
 				}
@@ -93,10 +99,10 @@ var $http = require("../vendors/Http/http");
 			if ( hamburger ) {	
 				hamburger.addEventListener("click", evt => {
 					evt.preventDefault();
-					if ( navEnabled === false ) {
-						_openNav();
-					} else { 
+					if ( htmlClass.contains(settings.navOpenClass) ) {
 						_closeNav();
+					} else { 
+						_openNav();
 					}
 				});
 			}
@@ -108,15 +114,17 @@ var $http = require("../vendors/Http/http");
 			var header = document.querySelector("header"),
 				mql = window.matchMedia(settings.scrollIgnoreMQ),
 				mqlListen = () => {
-					if ( mql.matches === true ) {
-						//_closeNav();
-						if (window.pageYOffset < settings.scrollThreshold ) { 
-							htmlClass.remove(settings.scrollClass);				
-						} else if ( header.getBoundingClientRect().top <= 0 ) {
-							htmlClass.add(settings.scrollClass);
+					if (!settings.scrollAttrIgnoreInterior || settings.scrollAttrIgnoreInterior() === true) { 
+						if ( mql.matches === true ) {
+							//_closeNav();
+							if (window.pageYOffset < settings.scrollThreshold ) { 
+								document.documentElement.removeAttribute(settings.scrollAttr);				
+							} else if ( header.getBoundingClientRect().top <= 0 ) {
+								document.documentElement.setAttribute(settings.scrollAttr, "");
+							}
+						} else {
+							document.documentElement.setAttribute(settings.scrollAttr, "");
 						}
-					} else {
-						htmlClass.add(settings.scrollClass);
 					}
 				};
 
@@ -148,7 +156,7 @@ var $http = require("../vendors/Http/http");
 		
 		function _processWaybetter() {
 			// 	WayBetter Animations
-			Array.from(document.querySelectorAll("[waybetter-watch]")).forEach(el => new Waybetter(el));
+			[].slice.apply(document.querySelectorAll("[waybetter-watch]")).forEach(el => new Waybetter(el));
 		}
 		
 		function _processExternalLinks() {
@@ -164,8 +172,8 @@ var $http = require("../vendors/Http/http");
 		}
 
 		function _processCollapsible() {
-			Array.from(document.querySelectorAll(settings.collapsibleSelector)).forEach(collapsible => {
-			    let items = Array.from( collapsible.children );
+			[].slice.apply(document.querySelectorAll(settings.collapsibleSelector)).forEach(collapsible => {
+			    let items = [].slice.apply( collapsible.children );
 			    items.forEach(item => {
 			    	let trigger = item.children[0],
 			        	content = item.children[1];
@@ -178,7 +186,7 @@ var $http = require("../vendors/Http/http");
 						}
 			        
 						if (active !== trigger.parentNode ) {
-							let height = Array.from(trigger.nextElementSibling.children).reduce((a,b) => {
+							let height = [].slice.apply(trigger.nextElementSibling.children).reduce((a,b) => {
 								let style = window.getComputedStyle(b);
 								return a + parseFloat(style.height) + 
 									       parseFloat(style.paddingTop) + 
@@ -197,17 +205,15 @@ var $http = require("../vendors/Http/http");
 		
 		
 		function _cutRetinaInHalf(img) { 
-			img.width/=2;
+			img.width = img.naturalWidth/2;
 		}
 		
 		function _closeNav(immediate) {
-			navEnabled = false;	
 			if ( immediate ) { htmlClass.add("immediate"); }
 			htmlClass.remove(settings.navOpenClass);
 		}
 		
 		function _openNav() {
-			navEnabled = true;
 			htmlClass.add(settings.navOpenClass);
 		}
 		
@@ -232,9 +238,11 @@ var $http = require("../vendors/Http/http");
 	 */
 	if (typeof window.drupalSettings !== "undefined" && typeof window.drupalSettings.toolbar !== "undefined") {
     	var tabs = document.querySelector('ul.button-group');
-    	tabs.style.margin = 0;
-    	Array.from(tabs.children).forEach(function(li) { li.classList.add("admin-menu-tab"); });
-		document.querySelector('.toolbar-menu-administration').appendChild( tabs );
+    	if (tabs) {
+	    	tabs.style.margin = 0;
+	    	[].slice.apply(tabs.children).forEach(function(li) { li.classList.add("admin-menu-tab"); });
+			document.querySelector('.toolbar-menu-administration').appendChild( tabs );
+		}
 	}
 })(window);
 

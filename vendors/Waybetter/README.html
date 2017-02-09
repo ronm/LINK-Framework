@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="waybetter">Waybetter</h1>
+
+<p>Easy to use plugin to fire events when elements come into frame. Not much js skills needed. A better replacement for jQuery Waypoints.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>jQuery 1.2.3+</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>First include the <code>waybetter.min.js</code> in your document, towards the bottom&#8230;right? Then call <code>$elem.waybetter()</code>.</p>
+
+<pre><code class="html">&lt;script type=&quot;text/javascript&quot; src=&quot;waybetter.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(&quot;#item&quot;).waybetter();
+&lt;/script&gt;
+</code></pre>
+
+<p>This would result in the below when <code>#item</code> scrolled into the viewport.</p>
+
+<pre><code class="html">&lt;div id=&quot;item&quot; data-waybetter&gt;Lorem ipsum...&lt;/div&gt;
+</code></pre>
+
+<p>Tip: you can also tell waybetter to watch elements on load by adding the attribute <code>data-waybetter-watch</code> to any element.</p>
+
+<h2 id="options">Options</h2>
+
+<p>Options can be passed to the waybetter function at initialization, otherwise it must be followed by the refresh method.</p>
+
+<pre><code>$(&quot;#item&quot;).waybetter({ direction : &quot;horizontal&quot; });
+</code></pre>
+
+<p>later&#8230;</p>
+
+<pre><code>$(&quot;#item&quot;).waybetter({ threshold : 50 }).waybetter('refresh');
+</code></pre>
+
+<h3 id="debounce0">debounce=0</h3>
+
+<p><code>number</code></p>
+
+<p>How often during scrolling and resizing should waybetter reprocess the DOM. Default zero is no debounce, otherwise integer is milliseconds.</p>
+
+<h3 id="directionvertical">direction=vertical</h3>
+
+<p><code>string</code></p>
+
+<p>Possible values: <em>vertical</em> or <em>horizontal</em></p>
+
+<h3 id="threshold0">threshold=0</h3>
+
+<p><code>number</code></p>
+
+<p>A positive value will cause the function to wait to trigger until that many pixels after the element has reached the viewport.</p>
+
+<p>Conversely a negative value will cause the function to trigger that many pixels before the element has reached the viewport.</p>
+
+<h3 id="viewportwindow">viewport=window</h3>
+
+<p><code>DOM Element</code> or <code>jQuery Element</code> or <code>string selector</code></p>
+
+<p>This is the viewport that the position of the scrolling element is compared to. This will typically remain as window.</p>
+
+<h2 id="methods">Methods</h2>
+
+<h3 id="destroy">destroy</h3>
+
+<p>This method stops all waybetter points within the document</p>
+
+<pre><code>$(document).waybetter('destroy');
+</code></pre>
+
+<h3 id="inview">inview</h3>
+
+<p>Check whether a given item is within the viewport. </p>
+
+<pre><code>$(&quot;#item&quot;).waybetter('inview');
+</code></pre>
+
+<p>returns <code>boolean</code></p>
+
+<h3 id="refresh">refresh</h3>
+
+<p>This will refresh all matched waybetter points. This is useful if you want to set different options after initialization. </p>
+
+<pre><code>$(&quot;#item&quot;).waybetter('refresh');
+</code></pre>
+
+</body>
+</html>
