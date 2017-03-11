@@ -1,11 +1,9 @@
-/*jshint esnext: true */
-
 let $http = url => {
 	let ajax = (method, options = {}) => {
 		return new Promise((resolve, reject) => {
 			let client = new XMLHttpRequest(), params = [];
 
-			client.addEventListener("load", () => (client.status >= 200 && client.status < 300) ? resolve(client) : reject(client));
+			client.addEventListener("load", () => (client.status >= 200 && client.status < 300) ? resolve(client.response, client) : reject(client));
 
 			if ( options.data ) {
 				for (var key in options.data) { 
