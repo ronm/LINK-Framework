@@ -13,6 +13,7 @@ class Waybetter {
         this.threshold = threshold;
         this.viewport = window;
         ["scroll", "resize"].forEach(e => this.viewport.addEventListener(e, () => this._process()));
+        this.refresh();
     }
 
     refresh() {
